@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor de Musica  | Marian</title>
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="top-bar">
+<i class="material-icons">expand_more</i>
+ <span>Now Playing</span>
+<i class="material-icons">more_horiz</i>
+    </div>
+    <div class="img-area">
+      <img src="" alt="">
+    </div>
+    <div class="song-details">
+      <p class="name"></p>
+      <p class="artist"></p>
+    </div>
+    <div class="progress-area">
+      <div class="progress-bar">
+        <audio id="main-audio" src=""></audio>
+      </div>
+      <div class="song-timer">
+        <span class="current-time">0:00</span>
+        <span class="max-duration">0:00</span>
+      </div>
+    </div>
+    <div class="controls">
+      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+      <i id="prev" class="material-icons">skip_previous</i>
+      <div class="play-pause">
+        <i class="material-icons play">play_arrow</i>
+      </div>
+      <i id="next" class="material-icons">skip_next</i>
+      <i id="more-music" class="material-icons">queue_music</i>
+    </div>
+    <div class="music-list">
+      <div class="header">
+        <div class="row">
+          <i class= "list material-icons">queue_music</i>
+          <span>Music list</span>
+        </div>
+        <i id="close" class="material-icons">close</i>
+      </div>
+      <ul>
+        <!-- playlist para la lista -->
+        <li li-index="1" onclick="clicked(this)">
+            <div class="row">
+                <span>Days</span>
+                <p>The Drums</p>
+                </div>
+    <span id="days"class="audio-duration" t-duration="4:29">4:29</span>
+    <audio class="days" src="canciones/days.mp3"></audio>
+</li>
+
+<li li-index="2" onclick="clicked(this)">
+    <div class="row">
+        <span>After Dark</span>
+        <p>Mr.Kitty</p>
+        </div>
+<span id="after dark"class="audio-duration" t-duration="4:19">4:19</span>
+<audio class="days" src="canciones/after dark.mp3"></audio>
+</li>
+
+<li li-index="3" onclick="clicked(this)">
+    <div class="row">
+        <span>Cigarettes out the Window</span>
+        <p>TV Girl</p>
+        </div>
+<span id="cigaretes"class="audio-duration" t-duration="3:18">3:18</span>
+<audio class="cigaretes" src="canciones/cigaretes.mp3"></audio>
+</li>
+
+<li li-index="4" onclick="clicked(this)">
+    <div class="row">
+        <span>Island</span>
+        <p>The XX</p>
+        </div>
+<span id="island"class="audio-duration" t-duration="2:40">2:40</span>
+<audio class="island" src="canciones/island.mp3"></audio>
+</li>
+
+<li li-index="5" onclick="clicked(this)">
+    <div class="row">
+        <span>Money</span>
+        <p>The Drums</p>
+        </div>
+<span id="money"class="audio-duration" t-duration="3:53">3:53</span>
+<audio class="money" src="canciones/money.mp3"></audio>
+</li>
+
+<li li-index="6" onclick="clicked(this)">
+    <div class="row">
+        <span>Rebel Rebel</span>
+        <p>David Bowie</p>
+        </div>
+<span id="rebel rebel"class="audio-duration" t-duration="4:34">4:34</span>
+<audio class="rebel rebel" src="canciones/rebel rebel.mp3"></audio>
+</li>
+
+<li li-index="7" onclick="clicked(this)">
+    <div class="row">
+        <span>Clint Eastwood</span>
+        <p>Gorillaz</p>
+        </div>
+<span id="gorillaz"class="audio-duration" t-duration="5:40">5:40</span>
+<audio class="gorillaz" src="canciones/gorillaz.mp3"></audio>
+</li>
+
+<li li-index="8" onclick="clicked(this)">
+    <div class="row">
+        <span>I Know it is Over</span>
+        <p>The Smiths</p>
+        </div>
+<span id="i know it is over"class="audio-duration" t-duration="5:49">5:49</span>
+<audio class="i know it is over" src="canciones/i know is over.mp3"></audio>
+</li>
+
+<li li-index="9" onclick="clicked(this)">
+    <div class="row">
+        <span>Lithium</span>
+        <p>Nirvana</p>
+        </div>
+<span id="lithium"class="audio-duration" t-duration="4:17">4:17</span>
+<audio class="lithium" src="canciones/lithium.mp3"></audio>
+</li>
+
+<li li-index="10" onclick="clicked(this)">
+    <div class="row">
+        <span>Lovesong</span>
+        <p>The Cure</p>
+        </div>
+<span id="lovesong"class="audio-duration" t-duration="3:28">3:28</span>
+<audio class="lovesong" src="canciones/lovesong.mp3"></audio>
+</li>
+
+<li li-index="11" onclick="clicked(this)">
+    <div class="row">
+        <span>Pink in the Night</span>
+        <p>Mitski</p>
+        </div>
+<span id="pink in the night"class="audio-duration" t-duration="2:16">2:16</span>
+<audio class="pink in the night" src="canciones/pink in the night.mp3"></audio>
+</li>
+
+<li li-index="12" onclick="clicked(this)">
+    <div class="row">
+        <span>Reptilia</span>
+        <p>The Strokes</p>
+        </div>
+<span id="reptilia"class="audio-duration" t-duration="3:39">3:39</span>
+<audio class="reptilia" src="canciones/reptilia.mp3"></audio>
+</li>
+
+<li li-index="13" onclick="clicked(this)">
+    <div class="row">
+        <span>The Perfect Girl</span>
+        <p>Mareux</p>
+        </div>
+<span id="the perfect girl"class="audio-duration" t-duration="3:14">3:14</span>
+<audio class="the perfect girl" src="canciones/the perfect girl.mp3"></audio>
+</li>
+
+<li li-index="14" onclick="clicked(this)">
+    <div class="row">
+        <span>Well I Wonder</span>
+        <p>The Smiths</p>
+        </div>
+<span id="well i wonder"class="audio-duration" t-duration="3:59">3:59</span>
+<audio class="well i wonder" src="canciones/well i wonder.mp3"></audio>
+</li>
+
+<li li-index="15" onclick="clicked(this)">
+    <div class="row">
+        <span>Not Allowed</span>
+        <p>TV Girl</p>
+        </div>
+<span id="not allowed"class="audio-duration" t-duration="2:47">2:47</span>
+<audio class="not allowed" src="canciones/not allowed.mp3"></audio>
+</li>
+
+</li>
+      </ul>
+    </div>
+  </div>
+  <script src="playlist.js"></script>
+  <script src="codigo.js"></script>
+</body>
+</html>
